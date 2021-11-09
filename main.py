@@ -136,7 +136,7 @@ with open(chosen_image, 'rb') as f:
     # add MIMEBase object to MIMEMultipart object
     message.attach(mime)
 
-html = '<p><img src="cid:0">' +  str(offline_count) + '/' + str(online_count) + ' APs online</p>' + html 
+html = '<p style="font-size: x-large"><strong><img src="cid:0">' +  str(offline_count) + '/' + str(online_count) + ' APs online</strong></p>' + html 
 
 # Turn these into plain/html MIMEText objects
 #part1 = MIMEText(org_url, "html")
